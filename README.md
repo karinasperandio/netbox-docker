@@ -16,8 +16,9 @@ Questions? Before opening an issue on Github, please join the [Network To Code][
 To get NetBox up and running:
 
 ```
-$ git clone -b master https://github.com/ninech/netbox-docker.git
+$ git clone -b master https://github.com/karinasperandio/netbox-docker.git
 $ cd netbox-docker
+$ git checkout $(git tag | tail -1)
 $ docker-compose pull
 $ docker-compose up -d
 ```
